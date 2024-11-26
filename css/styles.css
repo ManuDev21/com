@@ -1,0 +1,64 @@
+body {
+    background-color: black;
+}
+
+#main-title {
+    font-family: algerian;
+
+    color: #ffffff;
+    animation: color-blink 5s infinite, bounce 1s infinite;
+}
+
+@keyframes color-blink {
+    0%{
+        color: red;
+        text-shadow: 0px 0px 20px red,
+                    0px 0px 25px red,
+                    0px 0px 30px red;
+    }
+    25%{
+        color: cyan;
+        text-shadow: 0px 0px 20px cyan,
+                    0px 0px 25px cyan,
+                    0px 0px 30px cyan;
+    }
+    50% {
+        color: yellow;
+        text-shadow: 0px 0px 20px yellow,
+                    0px 0px 25px yellow,
+                    0px 0px 30px yellow;
+    }
+    75%{
+        color: magenta;
+        text-shadow: 0px 0px 20px magenta,
+                    0px 0px 25px magenta,
+                    0px 0px 30px magenta;
+    }
+    100%{
+        color: aliceblue;
+        text-shadow: 0px 0px 20px aliceblue,
+                    0px 0px 25px aliceblue,
+                    0px 0px 30px aliceblue;
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Estilo para las cartas */
+.card {
+    box-shadow: 0px 0px 20px 2px white;
+    border: 1px solid black;
+}
+
+.card:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: .5s;
+}
